@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR Museum of Art</title>
+    <title>AR Museum of Art AR Demo</title>
+    <script
+        type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+    </script>
+    <script
+        nomodule
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
 </head>
 <body>
     <h1>AR Museum of Art</h1>
-    <p>testing...</p>
+    <model-viewer
+        src="https://cdn.glitch.com/ea8aad0f-c4ad-4fee-b2aa-0174986b2895%2Fchair.glb?v=1569230891112"
+        ios-src="https://github.com/Giorat/dope-chair-model-viewer/raw/master/model/chair.usdz"
+        alt="a 3D model of a chair"
+        auto-rotate
+        camera-controls
+        background-color="#ffffff"
+        ar
+        magic-leap
+        unstable-webxr>
+    </model-viewer>
 </body>
 </html>
