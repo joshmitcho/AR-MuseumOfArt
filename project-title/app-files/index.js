@@ -107,11 +107,11 @@
     imgHotspot.addEventListener('click', function() {
       switchScene(findSceneById(hotspot.target));
     });
-*/
+
 	var position = { yaw: Math.PI/4, pitch: Math.PI/8 };
 
 	scene.hotspotContainer().createHotspot(imgHotspot, position);
-	
+	*/
     return {
       data: data,
       scene: scene,
