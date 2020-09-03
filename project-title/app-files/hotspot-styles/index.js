@@ -30,7 +30,7 @@ var source = Marzipano.ImageUrlSource.fromString(
 
 // Set up autorotate, if enabled.
 var autorotate = Marzipano.autorotate({
-  yawSpeed: 0.03,
+  yawSpeed: 0.04,
   targetPitch: 0,
   targetFov: Math.PI/2
 });
@@ -50,7 +50,7 @@ var geometry = new Marzipano.CubeGeometry([
 
 // Create view.
 var limiter = Marzipano.RectilinearView.limit.traditional(2048, 120*Math.PI/180);
-var view = new Marzipano.RectilinearView( {yaw: 0, pitch: 0, roll: 2.1, fov: Math.PI/2 }, limiter);
+var view = new Marzipano.RectilinearView( {yaw: 0, pitch: 0, roll: 0, fov: Math.PI/2 }, limiter);
 
 // Create scene.
 var scene = viewer.createScene({
