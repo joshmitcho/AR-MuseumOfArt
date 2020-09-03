@@ -18,10 +18,15 @@
 // Create viewer.
 var viewer = new Marzipano.Viewer(document.getElementById('pano'));
 
-// Create source.
+/*/ Create source.
 var source = Marzipano.ImageUrlSource.fromString(
   "//www.marzipano.net/media/furnace/{z}/{f}/{y}/{x}.jpg",
-  { cubeMapPreviewUrl: "//www.marzipano.net/media/furnace/preview.jpg" });
+  { cubeMapPreviewUrl: "//www.marzipano.net/media/furnace/preview.jpg" });*/
+
+// Josh
+var source = Marzipano.ImageUrlSource.fromString(
+  "//www.joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/2/{z}/{f}/{y}/{x}.jpg",
+  { cubeMapPreviewUrl: "//www.joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/preview.jpg" });
 
 // Create geometry.
 var geometry = new Marzipano.CubeGeometry([
