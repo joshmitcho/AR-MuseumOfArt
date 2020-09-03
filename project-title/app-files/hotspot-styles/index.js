@@ -28,6 +28,18 @@ var source = Marzipano.ImageUrlSource.fromString(
   "//joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/{z}/{f}/{y}/{x}.jpg",
   { cubeMapPreviewUrl: "//joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/preview.jpg" });
 
+// Set up autorotate, if enabled.
+var autorotate = Marzipano.autorotate({
+  yawSpeed: 0.03,
+  targetPitch: 0,
+  targetFov: Math.PI/2
+});
+
+viewer.startMovement(autorotate);
+viewer.setIdleMovement(3000, autorotate);
+
+// end Josh
+
 // Create geometry.
 var geometry = new Marzipano.CubeGeometry([
     { tileSize: 256, size: 256, fallbackOnly: true },
