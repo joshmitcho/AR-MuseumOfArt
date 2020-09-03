@@ -25,8 +25,8 @@ var source = Marzipano.ImageUrlSource.fromString(
 
 // Josh
 var source = Marzipano.ImageUrlSource.fromString(
-  "//www.joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/2/{z}/{f}/{y}/{x}.jpg",
-  { cubeMapPreviewUrl: "//www.joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/preview.jpg" });
+  "//joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/2/{z}/{f}/{y}/{x}.jpg",
+  { cubeMapPreviewUrl: "//joshpmitchell.ca/ar-museumofart/project-title/app-files/tiles/0-dscn0003/preview.jpg" });
 
 // Create geometry.
 var geometry = new Marzipano.CubeGeometry([
