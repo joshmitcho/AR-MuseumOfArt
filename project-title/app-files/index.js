@@ -100,14 +100,14 @@
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
 	
-	// Josh
+	/*/ Josh
     var imgHotspot = document.createElement('img');
     imgHotspot.src = 'img/plus.png';
     imgHotspot.classList.add('hotspot');
     imgHotspot.addEventListener('click', function() {
       switchScene(findSceneById(hotspot.target));
     });
-
+*/
 	var position = { yaw: Math.PI/4, pitch: Math.PI/8 };
 
 	scene.hotspotContainer().createHotspot(imgHotspot, position);

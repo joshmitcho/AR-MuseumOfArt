@@ -35,8 +35,8 @@ var autorotate = Marzipano.autorotate({
   targetFov: Math.PI/2
 });
 
-viewer.startMovement(autorotate);
-viewer.setIdleMovement(3000, autorotate);
+//viewer.startMovement(autorotate);
+viewer.setIdleMovement(10000, autorotate);
 
 // end Josh
 
