@@ -30,12 +30,12 @@ var source = Marzipano.ImageUrlSource.fromString(
 
 // Set up autorotate, if enabled.
 var autorotate = Marzipano.autorotate({
-  yawSpeed: 0.04,
+  yawSpeed: 0.02,
   targetPitch: 0,
   targetFov: Math.PI/2
 });
 
-//viewer.startMovement(autorotate);
+viewer.startMovement(autorotate);
 viewer.setIdleMovement(10000, autorotate);
 
 // end Josh
@@ -61,4 +61,4 @@ var scene = viewer.createScene({
 });
 
 // Display scene.
-scene.switchTo({ transitionDuration: 0 });
+scene.switchTo({ transitionDuration: 1 });
