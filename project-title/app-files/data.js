@@ -85,7 +85,7 @@ var APP_DATA = {
           "yaw": -0.2874606712859489,
           "pitch": 0.05436703632596007,
           "title": "Piece #2",
-          "text": "Also a good one"
+          "text": "Also a good one<br><img src=\"img/marzipano.png\">"
         }
       ]
     }
